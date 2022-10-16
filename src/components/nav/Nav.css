@@ -1,0 +1,21 @@
+.navContainer{
+    background-color: #222222;
+    height: 50px;
+    color: #fff;
+    font-size: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.nav-item>a{
+    color: #fff;
+    font-size: 20;
+    cursor: pointer;
+}

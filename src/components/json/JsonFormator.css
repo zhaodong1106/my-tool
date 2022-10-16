@@ -1,0 +1,19 @@
+.json-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.json-wrapper-source{
+
+}
+.json-wrapper-source textarea{
+    width: 400px;
+    height: 400px;
+}
+.json-wrapper-out{
+    width: 400px;
+    height: 400px;
+}

@@ -1,0 +1,24 @@
+.httpOnline-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.httpOnline-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+.httpOnline-url{
+    display: flex;
+    justify-content: space-between;
+}
+.url-left{
+    display: flex;
+    gap: 5px;
+}
+.url-left input[name='url']{
+    width: 500px;
+}
+.httpOnline-input{
+
+}

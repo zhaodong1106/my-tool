@@ -1,0 +1,36 @@
+.imageRecognition-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f5f5;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+}
+.imageRecognition-source{
+
+}
+.imageRecognition-source .srcImg{
+    background: 'url(' + file + ')' 200px 200px cover;
+}
+.imageRecognition-out{
+    
+}
+.imageRecognition-out textarea{
+    color: red;
+}
+.loading{
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.8);
+}
+.loading::after{
+    content: "loading!";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
