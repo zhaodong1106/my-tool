@@ -12,8 +12,12 @@ const BasicLayout = () => {
         
         <div style={basicLayoutStyle}>
           <Nav/>
+          <div style={{"overflow":"scroll","height":"100%"}}>
+
+          
           {/* Outlet相当于是子路由的占位符 */}
           <Outlet />
+          </div>
         </div>
       );
 }
