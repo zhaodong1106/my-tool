@@ -63,6 +63,7 @@
 .online-api-list{
     width: 200px;
     height: 100%;
+    text-align: center;
 }
 .httpOnline-api-item{
     cursor: pointer;

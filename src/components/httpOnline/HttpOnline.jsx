@@ -98,6 +98,16 @@ const HttpOnline = () => {
       queryAll();
     })
   }
+  function delHttp() {
+    axios({
+      method: 'post',
+      url: 'http://127.0.0.1:8989/onlineHttp/delReq?id='+id,
+    }).then(rsp => {
+      console.log(rsp);
+      queryAll();
+    })
+  }
+
   function detail(id) {
     let one = data.find((item, index, data) => {
       return item.id == id;
@@ -141,7 +151,16 @@ const HttpOnline = () => {
     editorRef.current = editor;
   }
 
-
+  function newReq(){
+      setId("");
+      setHeaders([]);
+      setTitle("");
+      setOutText("")
+      setOutTab('body');
+      setUrl("");
+      setMethod("get");
+      setJson("");
+  }
 
   return (
     <div className="httpOnline-container">
@@ -159,12 +178,18 @@ const HttpOnline = () => {
               })
             }
           </ul>
+          <div className="addApi" style={{"marginTop":"20px"}}>
+            <button onClick={newReq} style={{"cursor":"pointer"}}>ADD API</button>
+          </div>
         </div>
 
         <div className="httpOnline-wrapper">
           <div className="httpOnline-title">
             title：<input type="text" value={title} onChange={e => setTitle(e.target.value)} />
-            <button onClick={saveHttp}>save</button>
+            <button onClick={saveHttp}>{!id?'save':'update'}</button>
+            {
+              id?<button onClick={delHttp}>delete</button>:''
+            }
             <p className="errorMsg" style={{ "display": titleValid ? "none" : 'block' }}>title can not be empty!</p>
           </div>
           <div className="httpOnline-input">
