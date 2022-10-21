@@ -7,6 +7,7 @@ import IpQuery from './pages/IpQuery';
 import Captcha from './components/captcha/Captcha';
 import JsonPage from './pages/JsonPage';
 import HttpOnlinePage from './pages/HttpOnlinePage';
+import Spinner from './components/spinner/Spinner';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/ipQuery' element={<IpQuery />} />
           <Route path='/json' element={<JsonPage />} />
           <Route path='/httpOnline' element={<HttpOnlinePage />} />
+          <Route path='/spinner' element={<Spinner />} />
         </Route>
       </Routes>
     </BrowserRouter>
