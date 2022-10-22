@@ -4,7 +4,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
     createProxyMiddleware(
       '^/api',
       {
-        target: "http://127.0.0.1:8989",
+        target: "http://110.42.211.37:8989",
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''

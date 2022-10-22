@@ -21,6 +21,9 @@ const Nav = () => {
             <li className='nav-item'>
                 <Link to={"/httpOnline"}>Http Online</Link>
             </li>
+            <li className='nav-item'>
+                <Link to={"/httpOnline2"}>Http Online2</Link>
+            </li>
         </ul>
     </div>
   )

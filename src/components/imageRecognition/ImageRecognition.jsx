@@ -12,7 +12,7 @@ const ImageRecognition = () => {
         let formData = new FormData();
         formData.append("file", e.target.files[0]);
         setLoading(true);
-        axios.post('http://127.0.0.1:8989/ocr/upload', formData, {
+        axios.post('http://110.42.211.37:8989/ocr/upload', formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           }

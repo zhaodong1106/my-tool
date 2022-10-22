@@ -60,7 +60,7 @@ const HttpOnline = () => {
       console.log(method);
       axios({
         method: 'post',
-        url: 'http://127.0.0.1:8989/onlineHttp/sendReq',
+        url: 'http://110.42.211.37:8989/onlineHttp/sendReq',
         data: {
           url: url,
           method: method,
@@ -84,7 +84,7 @@ const HttpOnline = () => {
     };
     axios({
       method: 'post',
-      url: 'http://127.0.0.1:8989/onlineHttp/saveReq',
+      url: 'http://110.42.211.37:8989/onlineHttp/saveReq',
       data: {
         id: id,
         url: url,
@@ -101,7 +101,7 @@ const HttpOnline = () => {
   function delHttp() {
     axios({
       method: 'post',
-      url: 'http://127.0.0.1:8989/onlineHttp/delReq?id='+id,
+      url: 'http://110.42.211.37:8989/onlineHttp/delReq?id='+id,
     }).then(rsp => {
       console.log(rsp);
       queryAll();
@@ -131,7 +131,7 @@ const HttpOnline = () => {
   const queryAll=()=>{
     axios({
       method: 'post',
-      url: 'http://127.0.0.1:8989/onlineHttp/listReq',
+      url: 'http://110.42.211.37:8989/onlineHttp/listReq',
       data: {
         url: url,
         method: method,
